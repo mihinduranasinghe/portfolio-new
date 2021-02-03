@@ -1,0 +1,179 @@
+<section id="references">
+    <div class="container  mb-5" >
+        <h2><strong>Recommendations</strong></h2>
+        <span class="bar-title mb-5"></span>
+        <div class="card shadow-lg  rounded pb-3" data-aos="fade-up" data-aos-delay="500">
+            <div id="carouselExampleIndicatorsRecommendations" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicatorsRecommendations" data-slide-to="0" class="not-active active"></li>
+                    <li data-target="#carouselExampleIndicatorsRecommendations" *ngFor="let i of result" data-slide-to="i" class="not-active"></li>
+                    <!-- <li data-target="#carouselExampleIndicatorsRecommendations" data-slide-to="2" class="not-active"></li> -->
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-block w-100">
+                            <div class="row">
+                                <div class="col-lg-2 ml-4 mr-4 col-sm-12">
+                                    <div class="row">
+                                        <div class="mt-4">
+                                            <img class="d-block w-100 rounder" src="assets/images/recommendations/maria2.jpg"
+                                                alt="Second slide">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mt-3">
+                                            <h5>Maria Kaed</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mt-2 ">
+                                            <h5><small>Co-Founder / CMO</small></h5>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mt-2 ">
+                                            <span class="text-uppercase"><strong>SquareHub | DirectPay | Pay Media</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body ml-4 mr-3 mt-4 col-lg-9 col-sm-12">
+                                    <div class="row">
+                                        <span><i>I had the opportunity to work with Mihindu as a mentor during the Generation Unlimited (GenU) Youth Challenge organized
+                                        by UNDP. Mihindu and his team underwent a 3-month startup incubation support with SquareHub as a part of the GenU
+                                        programme. During the incubation, Mihindu showcased great potential as a young innovator. His commitment and resilience
+                                        will take him a long way in his professional career.</i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" *ngFor="let recommendation of recommendations$ | async">
+                        <div class="d-block w-100">
+                            <div class="row">
+                                <div class="col-lg-2 ml-4 mr-4 col-sm-12">
+                                    <div class="row">
+                                        <div class="mt-4">
+                                            <img class="d-block w-100 rounder" src="{{recommendation.avatar}}" alt="Second slide">
+                    
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mt-3">
+                                            <h5>{{recommendation.name}}</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mt-2 ">
+                                            <h5><small>{{recommendation.designation}}</small></h5>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mt-2 ">
+                                            <span class="text-uppercase"><strong>{{recommendation.organization}}</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body ml-4 mr-3 mt-4 col-lg-9 col-sm-12">
+                                    <div class="row">
+                                        <span><i>{{recommendation.recommendation}}</i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CRUD -->
+
+        <!-- Write -->
+            <!-- <input type="text" (keyup.enter)="add(recommendation)" #recommendation> -->
+        <!-- End of write -->
+
+        <!-- update -->
+            <!-- <button (click)="update(1)">Update</button> -->
+         <!-- update -->
+            
+        <!-- delete -->
+            <!-- <button (click)="delete(1)">Delete</button>        -->
+        <!-- End of delete -->
+
+        <!-- Read -->
+            <!-- <ul>
+                <li *ngFor="let recommendation of recommendations$ | async">{{recommendation.name}}</li>
+            </ul> -->
+            <!-- <p>{{recommendation$ | async | json}}</p> -->
+
+            <!-- <p>{{(recommendation$ | async).name}}</p> -->
+            <!-- <ul *ngIf="recommendation$ | async as recommendation">
+            <li>{{recommendation.name}}</li>
+            <li>{{recommendation.email}}</li>
+            <li>{{recommendation.recommendation}}</li>
+        </ul> -->
+    
+        <!--End of Read -->
+
+        </div>
+
+        <div class="card container mb-5">
+            <!-- form -->
+            <form #f="ngForm" (ngSubmit)="submit(f.value)" class="m-5">
+                <h4>You are welcome to write me a recommendation.</h4>
+                <h6 style="color: red;">You can edit your recommendation at any time by re-submitting the form with the same <b>email ID</b></h6>
+                <div class="form-group">
+                    <label for="name"><b>Your Name</b></label>
+                    <input required minlength="4" ngModel name="name" #name="ngModel" type="text" class="form-control" id="name" />
+                    <!-- <div *ngIf="name.touched && name.invalid" class="alert alert-danger">
+                                <div *ngIf="name.errors.required">Name field is required</div>
+                                <div *ngIf="name.errors.minlength">
+                                    Name field should be at least 
+                                </div>
+                            </div> -->
+                </div>
+            
+                <div class="form-group">
+                    <label for="email"><b>Email</b></label>
+                    <input required minlength="4" ngModel name="email" #email="ngModel" type="text" class="form-control"
+                        id="email" />
+                </div>
+            
+                <div class="form-group">
+                    <label for="designation">Designation</label>
+                    <input required minlength="1" ngModel name="designation" #designation="ngModel" type="text" class="form-control"
+                        id="designation" />
+                </div>
+            
+                <div class="form-group">
+                    <label for="organization">Organization</label>
+                    <input required minlength="1" ngModel name="organization" #organization="ngModel" type="text"
+                        class="form-control" id="organization" />
+                </div>
+            
+                <div class="form-group">
+                    <label for="recommendation_note"><b>Recommendation Note</b></label>
+                    <!-- <input required minlength="5" ngModel name="recommendation_note" #recommendation_note="ngModel" type="text"
+                        class="form-control" id="recommendation_note" /> -->
+                    <textarea rows="2" cols="30" required minlength="5" ngModel name="recommendation_note" #recommendation_note="ngModel" type="text"
+                        class="form-control" id="recommendation_note"></textarea>
+                </div>
+            
+                <div class="form-group col-12">
+                    <label for="recommendation_note"><b>Please upload an image of you</b></label>
+                    <input required type="file" class="card card-shadow" id="file" #userPhoto (change)="selectImage($event)" accept="*.png.jpg.jpeg" name="image"
+                        autocomplete="off" />
+                    <!-- <input type="file" id="file" #userPhoto name="image" accept="*.png.jpg.jpeg" autocomplete="off" /> -->
+                    <!-- <button (click)="uploadImage()">Upload image</button> -->
+                </div>      
+        
+                <button [disabled]="f.invalid" class="btn btn-primary">Give / Edit my recommendation for <b>Mihindu Ranasinghe</b> </button>
+
+                <!-- <p>{{ f.value | json }}</p> -->
+            </form>
+            <!-- end of form -->
+        </div>
+</section>
+
+

@@ -1,0 +1,290 @@
+<section id="projects">
+    <div class="container" >
+        <h2><strong>Projects</strong></h2>
+        <span class="bar-title mb-5"></span>
+        
+            <!-- Projects carousal -->
+            <div class="card card-shadow shadow-lg  rounded" data-aos="fade-zoom" data-aos-delay="300">
+                <div id="carouselExampleIndicatorsProjects" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicatorsProjects" data-slide-to="0" class="not-active active"></li>
+                        <li data-target="#carouselExampleIndicatorsProjects" data-slide-to="1" class="not-active"></li>
+
+                    </ol>
+                    <div class="carousel-inner">
+
+                        <!-- first page carousal -->
+                        <div class="carousel-item active">
+                            <div class="d-block w-100">
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-12" data-aos="flip-up">
+                                        <div class="card shadow-lg p-3  bg-white rounded">
+                                            <div class="card-header d-flex flex-column " style="height: 300px;width: 100%; ">
+                                                <div id="pokedex-img" class="img-wrap" style="height: 300px;width: 100%;  "
+                                                    [ngStyle]="{backgroundImage:'url(assets/images/projects/wso2.png)'}">
+                                    
+                                                </div>
+                                                <div id="pokedex-link" class="links mt-auto d-flex justify-content-center">
+                                                    <a href="assets/images/projects/wso2.png" data-gall="pokedexGallery" class="venobox vbox-item"
+                                                        title="Pokedex"><i class="bx bx-zoom-in bx-md"></i></a>
+                                                    <a href="assets/images/projects/wso2.png" data-gall="pokedexGallery" class="venobox vbox-item"
+                                                        title="Trainers"></a>
+                                                    <a href="assets/images/projects/wso2.png" data-gall="pokedexGallery" class="venobox vbox-item"
+                                                        title="Profile"></a>
+                                    
+                                                    <a href="#portfolio" title="Indisponible"><i class="bx bx-link bx-md"></i></a>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="card-body">
+                                                <h5 class="card-title">An API CI/CD pipeline with GitHub Actions for WSO2 API Cloud Users</h5>
+                                                <h5 class="card-title"><strong>Technologies:</strong> </h5>
+                                                <p class="card-text">Shell Script / Docker/ GitHub Actions / Git / Linux tools / APIMCLI </p>
+                                                <div class="d-flex flex-row justify-content-center">
+                                                    <a href="https://github.com/marketplace/actions/wso2-apimcloud-cicd" target="_blank" type="button" class="btn btn-primary mr-3">Source
+                                                        Code</a>
+                                                    <button (click)="detailOnClick('pokedex')" type="button" class="btn btn-primary">More Details</button>
+                                                </div>
+                                                <div *ngIf="pokedexIsShown" class="mt-3">
+                                                    <p>This project introduces a ready-to-use workflow setup that enables client managed CI/CD for WSO2 API Cloud or any
+                                                    distributed deployment of WSO2 API Manager hosted publicly. This approach eliminates the CI/CD burden on WSO2 API Cloud
+                                                    or deployment administrators and also allows clients to have full control of CI/CD with the use of workflows as
+                                                    required.
+                                                    </p><p>
+                                                    The speciality of this project is that clients will be able to manage a CI/CD pipeline for their API projects without
+                                                    having to configure any third party software, libraries, packages (Java/npm/newman/curl/...etc), and would not even
+                                                    require WSO2 APIM tools such as APIMCLI or APIMCTL. <a href="https://github.com/marketplace/actions/wso2-apimcloud-cicd">Marketplace</a> </p>
+                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 
+                                    <div class="col-lg-4 col-sm-12" data-aos="flip-up">
+                                        <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                                    
+                                            <div class="card-header d-flex flex-column " style="height: 300px;width: 100%; ">
+                                                <div id="mautic-img" class="img-wrap" style="height: 300px;width: 100%;  "
+                                                    [ngStyle]="{backgroundImage:'url(assets/images/projects/TM.png)'}">
+                                    
+                                                </div>
+                                                <div id="mautic-link" class="links mt-auto d-flex justify-content-center">
+                                                    <a href="assets/images/projects/TM.png" data-gall="MauticGallery" class="venobox vbox-item"
+                                                        title="Compagnes de marketing"><i class="bx bx-zoom-in bx-md"></i></a>
+                                                    <a href="assets/images/projects/TM.png" data-gall="MauticGallery" class="venobox vbox-item"
+                                                        title="Détail de la compagne"></a>
+                                                    <a href="assets/images/projects/TM.png" data-gall="MauticGallery" class="venobox vbox-item"
+                                                        title="Performance d'un émail"></a>
+                                                    <a href="assets/images/projects/TM.png" data-gall="MauticGallery" class="venobox vbox-item"
+                                                        title="Performance d'un Asset"></a>
+                                                    <a href="http://www.teammaster.xyz/"
+                                                        title="En cours" target="_BLANK"><i class="bx bx-link bx-md"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <h3 class="card-title">Team Master</h3>
+                                                <h5 class="card-title"><strong>Technologies:</strong> </h5>
+                                                <p class="card-text">React(Front End) / Node JS(Backend) / Express / axios / Redux / Mongo DB
+                                                -Working Project under construction</p>
+                                                
+                                    
+                                                <div class="d-flex flex-row justify-content-center">
+                                                    <a href="http://www.teammaster.xyz/" target="_blank"
+                                                        type="button" class="btn btn-primary mr-3">Web App</a>
+                                                    <button (click)="detailOnClick('mauticMonitoring')" type="button" class="btn btn-primary">More
+                                                        Details</button>
+                                                </div>
+                                                <div *ngIf="mauticMonitoringIsShown" class="mt-3">
+                                    
+                                                    <p>Complete Team Working and project management Platform like JIRA / Zoobe, with all the relevent features. You don't need
+                                                    to use multiple platforms to do different tasks. TeamMaster is an all in one platform <a title="Télécharger sur Google Play"
+                                                            href="http://www.teammaster.xyz/">Web Application</a> </p>
+                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    
+                                    <div class="col-lg-4 col-sm-12 " data-aos="flip-up">
+                                        <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                                            <div class="card-header d-flex flex-column " style="height: 300px;width: 100%; ">
+                                                <div id="teamTraveler-img" class="img-wrap" style="height: 300px;width: 100%;  "
+                                                    [ngStyle]="{backgroundImage:'url(assets/images/projects/ostiny.png)'}">
+                                                </div>
+                                                <div id="teamTraveler-link" class="links mt-auto d-flex justify-content-center">
+                                                    <a href="assets/images/projects/ostiny.png" data-gall="teamTravelerGallery" class="venobox vbox-item"
+                                                        title="Mes Voyages"><i class="bx bx-zoom-in bx-md"></i></a>
+                                                    <a href="assets/images/projects/ostiny.png" data-gall="teamTravelerGallery" class="venobox vbox-item"
+                                                        title="Détail du voyage"></a>
+                                                    <a href="assets/images/projects/ostiny.png" data-gall="teamTravelerGallery" class="venobox vbox-item"
+                                                        title="Mes Logements"></a>
+                                                    <a href="https://dev.to/mihinduranasinghe/leta-os-by-mihindu-ranasinghe-1pco"
+                                                        title="Télécharger sur Google Play" target="_BLANK"><i class="bx bx-link bx-md"></i></a>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="card-body">
+                                                <h3 class="card-title">Leta OS</h3>
+                                                <h6>Operating System Developed By Me</h6> 
+                                                <h5 class="card-title"><strong>Technologies:</strong> </h5>
+                                                <p class="card-text"> Assembly Language(Lower Level Language) / DataStructures / HardWare Stuctures</p>
+                                                <div class="d-flex flex-row justify-content-center">
+                                                    <a href="https://github.com/mihinduranasinghe/LetaOS.ByMihinduRanasinghe" target="_blank"
+                                                        target="_blank" type="button" class="btn btn-primary mr-3">Souce Code</a>
+                                                    <button (click)="detailOnClick('teamTraveler')" type="button" class="btn btn-primary">More
+                                                        Details</button>
+                                                </div>
+                                                <div *ngIf="teamTravelerIsShown" class="mt-3">
+                                                    <p>“Leta OS” is a simple OPERATING SYSTEM written in ASSEMBLY LANGUAGE. The main task of this OS is to
+                                                        display the hardware
+                                                        information of your personal computer where you run this operating system.<a
+                                                            title="Télécharger sur Google Play"
+                                                            href="https://dev.to/mihinduranasinghe/leta-os-by-mihindu-ranasinghe-1pco">Article</a> </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <!--End of first page carousal -->
+
+                        <!-- second page carousal -->
+                        <div class="carousel-item">
+                            <div class="d-block w-100">
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-12 " data-aos="flip-up">
+                                        <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                                            <div class="card-header d-flex flex-column " style="height: 300px;width: 100%; ">
+                                                <div id="teamTraveler-img" class="img-wrap" style="height: 300px;width: 100%;  "
+                                                    [ngStyle]="{backgroundImage:'url(assets/images/projects/textrecoginzertiny.jpg)'}">
+                                                </div>
+                                                <div id="teamTraveler-link" class="links mt-auto d-flex justify-content-center">
+                                                    <a href="assets/images/projects/textrecoginzertiny.jpg" data-gall="teamTravelerGallery"
+                                                        class="venobox vbox-item" title="Mes Voyages"><i class="bx bx-zoom-in bx-md"></i></a>
+                                                    <a href="assets/images/projects/textrecoginzertiny.jpg" data-gall="teamTravelerGallery"
+                                                        class="venobox vbox-item" title="Détail du voyage"></a>
+                                                    <a href="assets/images/projects/textrecoginzertiny.jpg" data-gall="teamTravelerGallery"
+                                                        class="venobox vbox-item" title="Mes Logements"></a>
+                                                    <a href="https://play.google.com/store/apps/details?id=com.mihinduranasinghe.cybercats.OCR"
+                                                        title="Télécharger sur Google Play" target="_BLANK"><i class="bx bx-link bx-md"></i></a>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="card-body">
+                                                <h3 class="card-title">Text Recognizer</h3>
+                                                <h5 class="card-title"><strong>Technologies:</strong> </h5>
+                                                <p class="card-text">Kotlin, Node JS(Back End) , Tesseract Library, Google Vision, Mongo DB,
+                                                    Heroku
+                                                    Deloyment(Back End)</p>
+                                                <div class="d-flex flex-row justify-content-center">
+                                                    <a href="https://play.google.com/store/apps/details?id=com.mihinduranasinghe.cybercats.OCR"
+                                                        target="_blank" target="_blank" type="button" class="btn btn-primary mr-3">Souce
+                                                        Code</a>
+                                                    <button (click)="detailOnClick('teamTraveler')" type="button" class="btn btn-primary">More
+                                                        Details</button>
+                                                </div>
+                                                <div *ngIf="teamTravelerIsShown" class="mt-3">
+                                                    <p>CamScanner Type App With many more new features <a title="Télécharger sur Google Play"
+                                                            href="https://play.google.com/store/apps/details?id=com.mihinduranasinghe.cybercats.OCR" target="_blank">Play
+                                                            Store</a> </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12" data-aos="flip-up">
+                                        <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                        
+                                            <div class="card-header d-flex flex-column " style="height: 300px;width: 100%; ">
+                                                <div id="mautic-img" class="img-wrap" style="height: 300px;width: 100%;  "
+                                                    [ngStyle]="{backgroundImage:'url(assets/images/projects/cyberchatstiny.jpg)'}">
+                        
+                                                </div>
+                                                <div id="mautic-link" class="links mt-auto d-flex justify-content-center">
+                                                    <a href="assets/images/projects/cyberchatstiny.jpg" data-gall="MauticGallery"
+                                                        class="venobox vbox-item" title="Compagnes de marketing"><i
+                                                            class="bx bx-zoom-in bx-md"></i></a>
+                                                    <a href="assets/images/projects/cyberchatstiny.jpg" data-gall="MauticGallery"
+                                                        class="venobox vbox-item" title="Détail de la compagne"></a>
+                                                    <a href="assets/images/projects/cyberchatstiny.jpg" data-gall="MauticGallery"
+                                                        class="venobox vbox-item" title="Performance d'un émail"></a>
+                                                    <a href="assets/images/projects/cyberchatstiny.jpg" data-gall="MauticGallery"
+                                                        class="venobox vbox-item" title="Performance d'un Asset"></a>
+                                                    <a href="https://play.google.com/store/apps/details?id=com.mihinduranasinghe.cyberchats"
+                                                        title="En cours" target="_BLANK"><i class="bx bx-link bx-md"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <h3 class="card-title">Cyber Chats</h3>
+                                                <h5 class="card-title"><strong>Technologies:</strong> </h5>
+                                                <p class="card-text">Android Studio, Java, Kotlin , Firebase,</p>
+                                                <p>Multi-user chat application</p>
+                        
+                                                <div class="d-flex flex-row justify-content-center">
+                                                    <a href="https://play.google.com/store/apps/details?id=com.mihinduranasinghe.cyberchats"
+                                                        target="_blank" type="button" class="btn btn-primary mr-3">Source Code</a>
+                                                    <button (click)="detailOnClick('mauticMonitoring')" type="button"
+                                                        class="btn btn-primary">More
+                                                        Details</button>
+                                                </div>
+                                                <div *ngIf="mauticMonitoringIsShown" class="mt-3">
+                        
+                                                    <p>Multi-user chat application <a title="Télécharger sur Google Play"
+                                                            href="https://play.google.com/store/apps/details?id=com.mihinduranasinghe.cyberchats">Play
+                                                            Store</a> </p>
+                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12" data-aos="flip-up">
+                                        <div class="card shadow-lg p-3  bg-white rounded">
+                                            <div class="card-header d-flex flex-column " style="height: 300px;width: 100%; ">
+                                                <div id="pokedex-img" class="img-wrap" style="height: 300px;width: 100%;  "
+                                                    [ngStyle]="{backgroundImage:'url(assets/images/projects/covid19.png)'}">
+                        
+                                                </div>
+                                                <div id="pokedex-link" class="links mt-auto d-flex justify-content-center">
+                                                    <a href="assets/images/projects/covid19.png" data-gall="pokedexGallery"
+                                                        class="venobox vbox-item" title="Pokedex"><i class="bx bx-zoom-in bx-md"></i></a>
+                                                    <a href="assets/images/projects/covid19.png" data-gall="pokedexGallery"
+                                                        class="venobox vbox-item" title="Trainers"></a>
+                                                    <a href="assets/images/projects/covid19.png" data-gall="pokedexGallery"
+                                                        class="venobox vbox-item" title="Profile"></a>
+                        
+                                                    <a href="#portfolio" title="Indisponible"><i class="bx bx-link bx-md"></i></a>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="card-body">
+                                                <h3 class="card-title">Corona Dashboard</h3>
+                                                <h5 class="card-title"><strong>Technologies:</strong> </h5>
+                                                <p class="card-text">JavaScript / Bootstrap/ SAAS / WHO API / Arimac HPB API / Location APIs /
+                                                    axios</p>
+                                                <div class="d-flex flex-row justify-content-center">
+                                                    <a href="https://covid19lk.live/" target="_blank" type="button"
+                                                        class="btn btn-primary mr-3">Web App</a>
+                                                    <button (click)="detailOnClick('pokedex')" type="button" class="btn btn-primary">More Details</button>
+                                                </div>
+                                                <div *ngIf="pokedexIsShown" class="mt-3">
+                                                    <p>CORONA DASHBOARD (Web Application) <a href="https://covid19lk.live/">Application</a> </p>
+                                                    <p>National and inter national covid 19 statistics live update. National hospital vise
+                                                        records live
+                                                        update.
+                                                        <br>International covid based heat map live update.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End of second page carousal -->
+
+                    </div>
+                </div>
+            </div>
+            <!--End of Projects carousal -->      
+    </div>
+</section>

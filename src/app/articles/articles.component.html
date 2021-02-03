@@ -1,0 +1,90 @@
+
+
+                <!--6 per page -->
+                   <!-- <div class="carousel-item active" *ngFor="let item_bundle of item_indexes_restructured_array">
+                            <div class="d-block w-100">
+                                <div class="row">
+        
+                                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-1" data-aos="flip-up" *ngFor="let article of item_bundle">
+                                        <div class="card shadow-sm bg-white rounded">
+                                            <div class="card-header d-flex flex-column " style="height: 150px;width: 100%; ">
+                                                <img src="{{ article.cover_image }}" style="height: 100%;width: 100%;" alt="">                                               
+                                            </div>
+                                    
+                                            <div class="card-body">
+                                                <h6 class="card-title">{{ article.title }}</h6>
+                                                <div class="d-flex flex-row justify-content-center">
+                                                    <a href="{{ article.url }}" target="_blank" type="button" class="btn btn-primary mr-3">Article</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                                                      
+                                </div>
+                            </div>
+                        </div>   -->
+                <!--End of 6 per page -->
+                
+<!-- --- -->
+
+<section id="articles">
+    <div class="container  mb-5">
+        <h2><strong>Technical Articles</strong></h2>
+        <span class="bar-title mb-5"></span>
+        <div class="card shadow-lg  rounded pb-3" data-aos="fade-up" data-aos-delay="500">
+            <div id="carouselExampleIndicatorsRecommendations2" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicatorsRecommendations2" data-slide-to="0"
+                        class="not-active active"></li>
+                    <li data-target="#carouselExampleIndicatorsRecommendations2" data-slide-to="1" class="not-active">
+                    </li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-block w-100">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-1" data-aos="flip-up" *ngFor="let article of item_indexes_restructured_array[0]">
+                                    <div class="card shadow-sm bg-white rounded">
+                                        <div class="card-header d-flex flex-column " style="height: 150px;width: 100%; ">
+                                            <img src="{{ article.cover_image }}" style="height: 100%;width: 100%;" alt="">
+                                        </div>
+                                
+                                        <div class="card-body">
+                                            <h6 class="card-title">{{ article.title }}</h6>
+                                            <div class="d-flex flex-row justify-content-center">
+                                                <a href="{{ article.url }}" target="_blank" type="button" class="btn btn-primary mr-3">Article</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="d-block w-100">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-1" data-aos="flip-up" *ngFor="let article of item_indexes_restructured_array[1]">
+                                    <div class="card shadow-sm bg-white rounded" *ngIf="article">
+                                        <div class="card-header d-flex flex-column " style="height: 150px;width: 100%; ">
+                                            <img src="{{ article.cover_image }}" style="height: 100%;width: 100%;" alt="">
+                                        </div>
+                                
+                                        <div class="card-body">
+                                            <h6 class="card-title">{{ article.title }}</h6>
+                                            <div class="d-flex flex-row justify-content-center">
+                                                <a href="{{ article.url }}" target="_blank" type="button" class="btn btn-primary mr-3">Article</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
