@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   // avatar= 'assets/images/avatar.png';
   // avatar= 'assets/images/avatar2.png';
   // avatar= 'assets/images/Mihindu Ranasinghe2.jpg';
-  avatar= 'assets/images/Mihindu Ranasinghe3.png';
+  avatar= 'assets/images/Mihindu Ranasinghe3.jpg';
 
   ngOnInit(): void {
     var options = {
