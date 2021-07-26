@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     var options = {
-      strings: ['','Full-Stack Developer', 'DevOps Engineer','Cloud Operations Engineer'],
+      strings: ['','Full-Stack Engineer', 'Machine Learning','Cloud Native Enthusiast'],
       typeSpeed: 50,
       backSpeed: 50,
       loop: true,
